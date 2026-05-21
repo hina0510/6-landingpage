@@ -1,0 +1,30 @@
+@keyframes hero-card-float {
+  from {
+    transform: rotateZ(11deg) rotateY(-6deg) translateY(0);
+  }
+  to {
+    transform: rotateZ(11deg) rotateY(-6deg) translateY(-12px);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero__float-badge,
+  .showcase__ring,
+  .card-visual--hero {
+    animation: none !important;
+  }
+
+  .card-visual--hero {
+    transform: rotateZ(11deg) rotateY(-6deg);
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+}

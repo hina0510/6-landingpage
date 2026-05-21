@@ -1,0 +1,135 @@
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: 48px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: calc(0.95rem + 2px);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+  will-change: transform;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: var(--shadow-btn);
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-dark);
+  box-shadow: 0 6px 28px rgba(107, 143, 82, 0.35);
+}
+
+.btn--white {
+  background: var(--color-white);
+  color: var(--color-text);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn--outline-white {
+  background: transparent;
+  color: var(--color-white);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn--outline-white:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.btn--wide {
+  width: 100%;
+  max-width: 480px;
+  padding: 18px 32px;
+  font-size: calc(1.05rem + 2px);
+}
+
+.btn-ghost {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: calc(0.8rem + 4px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Glass */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+}
+
+/* Reveal (initial state for GSAP) */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

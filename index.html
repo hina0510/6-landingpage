@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="올리브영 × 네이버페이 카드 — 올리브영에서 가장 이득 보는 방법" />
+  <title>올리브영 × 네이버페이 카드</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#" class="header__brand" aria-label="홈">
+        <img src="assets/icons/logo-oliveyoung.svg" alt="" class="header__logo-img header__logo-img--oy header__logo-img--dark" width="120" height="20" />
+        <img src="assets/icons/logo-oliveyoung-white.svg" alt="" class="header__logo-img header__logo-img--oy header__logo-img--light" width="120" height="20" />
+        <span class="header__logo-divider" aria-hidden="true">×</span>
+        <img src="assets/icons/logo-naverpay.svg" alt="" class="header__logo-img header__logo-img--np header__logo-img--dark" width="64" height="20" />
+        <img src="assets/icons/logo-naverpay-white.svg" alt="" class="header__logo-img header__logo-img--np header__logo-img--light" width="64" height="20" />
+        <span class="visually-hidden">올리브영 × 네이버페이</span>
+      </a>
+      <nav class="header__nav" aria-label="주요 메뉴">
+        <a href="#showcase" class="header__link" data-scroll="showcase">혜택</a>
+        <a href="#membership" class="header__link" data-scroll="membership">멤버십</a>
+        <a href="#event" class="header__link" data-scroll="event">이벤트</a>
+        <a href="#apply" class="header__link" data-scroll="apply">발급 신청</a>
+      </nav>
+      <button type="button" class="header__notice btn-ghost" id="btn-notice" aria-haspopup="dialog">
+        이벤트 유의사항 +
+      </button>
+      <button type="button" class="header__menu-toggle" id="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 01 Hero -->
+    <section class="hero" id="hero" aria-label="메인">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow">올리브영 × 네이버페이 카드</p>
+          <h1 class="hero__title">
+            올리브영에서<br />
+            <span class="hero__title-accent">가장 이득 보는 방법</span>
+          </h1>
+          <p class="hero__subtitle">
+            올영 세일도, 네이버페이 적립도<br />
+            한 번에.
+          </p>
+          <span class="hero__badge">기간 한정 2024.05.01 – 2024.06.30</span>
+          <div class="hero__cta">
+            <a href="#apply" class="btn btn--white" data-scroll="apply">카드 발급받기 →</a>
+            <a href="#showcase" class="btn btn--outline-white" data-scroll="showcase">혜택 전체 보기 ↓</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero-card-wrap" id="hero-card">
+            <div class="card-visual card-visual--hero">
+              <img
+                src="assets/images/card.png"
+                alt="올리브영 × 네이버페이 카드"
+                class="card-visual__img"
+                width="550"
+                height="350"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            <div class="hero__float-badge">
+              <span>카드 발급하고</span>
+              <strong>자동 응모</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Floating Card Showcase -->
+    <section class="showcase section" id="showcase" aria-labelledby="benefits-title">
+      <h2 class="section-title reveal" id="benefits-title">올리브영 × 네이버페이 카드 혜택</h2>
+      <div class="container">
+        <div class="showcase__panel glass-panel reveal">
+          <div class="showcase__text">
+            <h2 class="showcase__title">혜택이 쌓이는 스마트한 선택</h2>
+            <p class="showcase__desc">
+              올리브영과 네이버페이의 만남,<br />
+              일상 속 모든 순간이 더 특별해집니다.
+            </p>
+            <div class="showcase__controls" aria-label="슬라이드 컨트롤">
+              <button type="button" class="showcase__pause" id="showcase-pause" aria-label="일시정지">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><rect x="2" y="1" width="3" height="12" rx="1"/><rect x="9" y="1" width="3" height="12" rx="1"/></svg>
+              </button>
+              <span class="showcase__counter" id="showcase-counter">1 / 6</span>
+            </div>
+          </div>
+          <div class="showcase__card-area">
+            <div class="showcase__ring" aria-hidden="true"></div>
+            <div class="card-visual card-visual--showcase">
+              <img
+                src="assets/images/card2.png"
+                alt=""
+                class="card-visual__img"
+                width="560"
+                height="354"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <div class="showcase__slides" id="showcase-slides" aria-hidden="true">
+            <div class="showcase__slide active" data-slide="0">올리브영 5% 추가 할인</div>
+            <div class="showcase__slide" data-slide="1">쿠폰 중복 적용 가능</div>
+            <div class="showcase__slide" data-slide="2">네이버페이 포인트 5% 적립</div>
+            <div class="showcase__slide" data-slide="3">신규 발급 1만원 쿠폰</div>
+            <div class="showcase__slide" data-slide="4">월 3회 무료배송</div>
+            <div class="showcase__slide" data-slide="5">VIP 월간 혜택</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mid CTA -->
+    <section class="mid-cta section" aria-label="카드 발급 안내">
+      <div class="container">
+        <div class="mid-cta__bar glass-panel reveal">
+          <p class="mid-cta__text">지금 카드 발급하고 모든 혜택을 한 번에 누리세요!</p>
+          <a href="#apply" class="btn btn--primary" data-scroll="apply">카드 발급하기 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Membership -->
+    <section class="membership section" id="membership" aria-labelledby="membership-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="membership-title">프리미엄 멤버십 혜택</h2>
+        <p class="section-desc reveal">카드 보유 고객만을 위한 월간 VIP 패키지</p>
+        <div class="membership__grid">
+          <div class="membership-card reveal">
+            <div class="membership-card__icon">🚚</div>
+            <h3>월 3회 무료배송</h3>
+            <p>올리브영 온라인몰 전 상품 배송비 무료 (월 3회)</p>
+          </div>
+          <div class="membership-card reveal">
+            <div class="membership-card__icon">N</div>
+            <h3>네이버페이 5,000P</h3>
+            <p>매월 1일 자동 지급, 올리브영·네이버 쇼핑 사용 가능</p>
+          </div>
+          <div class="membership-card reveal">
+            <div class="membership-card__icon">🎫</div>
+            <h3>할인쿠폰 3종</h3>
+            <p>뷰티·헬스·라이프 카테고리별 전용 쿠폰 매월 발급</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Event -->
+    <section class="event section" id="event" aria-labelledby="event-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="event-title">카드 발급하고 자동 응모</h2>
+        <p class="section-desc reveal">발급만 해도 추첨을 통해 푸짐한 경품을 드려요!</p>
+        <div class="event__prizes">
+          <article class="prize-card reveal">
+            <span class="prize-card__rank">1등</span>
+            <div class="prize-card__visual prize-card__visual--ipad" aria-hidden="true"></div>
+            <h3 class="prize-card__name">최신 iPad</h3>
+            <p class="prize-card__count">1명</p>
+          </article>
+          <article class="prize-card reveal">
+            <span class="prize-card__rank">2등</span>
+            <div class="prize-card__visual prize-card__visual--gift" aria-hidden="true"></div>
+            <h3 class="prize-card__name">올리브영 기프트카드 5만원</h3>
+            <p class="prize-card__count">10명</p>
+          </article>
+          <article class="prize-card reveal">
+            <span class="prize-card__rank">3등</span>
+            <div class="prize-card__visual prize-card__visual--point" aria-hidden="true"></div>
+            <h3 class="prize-card__name">네이버페이 1만원</h3>
+            <p class="prize-card__count">100명</p>
+          </article>
+        </div>
+        <div class="event__cta reveal">
+          <a href="#apply" class="btn btn--primary btn--wide" data-scroll="apply">카드 발급하고 자동 응모하기 →</a>
+          <p class="event__disclaimer">※ 카드 발급 완료 시 별도 응모 없이 자동 참여됩니다. 당첨자는 개별 연락드립니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Lifestyle Scenario -->
+    <section class="scenario section" id="scenario" aria-labelledby="scenario-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="scenario-title">이렇게 사용해보세요</h2>
+        <div class="scenario__flow">
+          <div class="scenario-step reveal">
+            <div class="scenario-step__icon">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M8 12h24l-2 20H10L8 12z" stroke="currentColor" stroke-width="2"/><path d="M14 12V8a6 6 0 0112 0v4" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <p>올리브영에서<br />쇼핑하고</p>
+          </div>
+          <span class="scenario__arrow" aria-hidden="true">→</span>
+          <div class="scenario-step reveal">
+            <div class="scenario-step__icon scenario-step__icon--np">N</div>
+            <p>네이버페이로<br />간편 결제</p>
+          </div>
+          <span class="scenario__arrow" aria-hidden="true">→</span>
+          <div class="scenario-step reveal">
+            <div class="scenario-step__icon">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="12" width="24" height="18" rx="2" stroke="currentColor" stroke-width="2"/><text x="20" y="26" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">5%</text></svg>
+            </div>
+            <p>5% 추가 할인<br />+ 포인트 적립</p>
+          </div>
+          <span class="scenario__arrow" aria-hidden="true">→</span>
+          <div class="scenario-step reveal">
+            <div class="scenario-step__icon">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="10" y="14" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M20 14v-6M14 8h12" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <p>다양한 혜택과<br />이벤트까지!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apply Form -->
+    <section class="apply section" id="apply" aria-labelledby="apply-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="apply-title">카드 발급 신청</h2>
+        <p class="section-desc reveal">간단한 정보 입력으로 혜택과 이벤트에 함께 참여하세요</p>
+        <form class="apply-form glass-panel reveal" id="apply-form" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder=" " />
+            <label for="name">이름</label>
+            <span class="form-error" id="error-name"></span>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder=" " />
+            <label for="phone">휴대폰 번호</label>
+            <span class="form-error" id="error-phone"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder=" " />
+            <label for="email">이메일</label>
+            <span class="form-error" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="birth" name="birth" required placeholder=" " maxlength="8" inputmode="numeric" />
+            <label for="birth">생년월일 (YYYYMMDD)</label>
+            <span class="form-error" id="error-birth"></span>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy">개인정보 수집·이용에 동의합니다 (필수)</label>
+          </div>
+          <span class="form-error" id="error-privacy"></span>
+          <button type="submit" class="btn btn--primary btn--wide">카드 발급하고 혜택 받기</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="faq-title">자주 묻는 질문</h2>
+        <div class="faq__list">
+          <details class="faq-item reveal">
+            <summary>카드 발급 조건이 있나요?</summary>
+            <p>만 19세 이상 내국인이면 누구나 신청 가능합니다. 신용 심사 결과에 따라 발급이 제한될 수 있습니다.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>올리브영 5% 할인은 어떻게 적용되나요?</summary>
+            <p>올리브영 매장·온라인몰에서 네이버페이로 결제 시 자동 적용됩니다. 기존 쿠폰과 중복 사용 가능합니다.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>이벤트 자동 응모는 언제 되나요?</summary>
+            <p>카드 발급이 완료된 날 기준 익일 자동 응모 처리됩니다. 별도 응모 절차는 필요 없습니다.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>VIP 혜택은 언제 받을 수 있나요?</summary>
+            <p>카드 발급 후 첫 결제 완료 시 익월 1일부터 매월 자동 지급됩니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky CTA -->
+  <aside class="sticky-cta" id="sticky-cta" aria-label="빠른 발급">
+    <a href="#apply" class="btn btn--primary" data-scroll="apply">카드 발급받기 →</a>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">OLIVE YOUNG × NAVER PAY</p>
+      <p class="footer__copy">© 2024 CJ Olive Young × Naver Financial. All rights reserved.</p>
+      <p class="footer__legal">본 페이지는 프로모션 목적의 랜딩 페이지이며, 실제 카드 발급은 금융사 정책에 따릅니다.</p>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal">
+      <button type="button" class="modal__close" id="modal-close" aria-label="닫기">×</button>
+      <h2 id="modal-title" class="modal__title">신청이 완료되었습니다</h2>
+      <p class="modal__desc">카드 발급 신청 및 이벤트 응모가 완료되었어요.</p>
+      <button type="button" class="btn btn--primary" id="modal-confirm">확인</button>
+    </div>
+  </div>
+
+  <!-- Notice Modal -->
+  <div class="modal-overlay" id="notice-modal" role="dialog" aria-modal="true" aria-labelledby="notice-title" hidden>
+    <div class="modal modal--notice">
+      <button type="button" class="modal__close" id="notice-close" aria-label="닫기">×</button>
+      <h2 id="notice-title" class="modal__title">이벤트 유의사항</h2>
+      <ul class="modal__list">
+        <li>본 이벤트는 2024.05.01 ~ 2024.06.30 기간 내 카드 신규 발급 고객 대상입니다.</li>
+        <li>경품 당첨자 발표는 이벤트 종료 후 2주 이내 개별 연락됩니다.</li>
+        <li>제세공과금은 당첨자 부담입니다.</li>
+        <li>부정한 방법으로 참여 시 당첨이 취소될 수 있습니다.</li>
+        <li>혜택 및 이벤트 내용은 사전 고지 없이 변경될 수 있습니다.</li>
+      </ul>
+      <button type="button" class="btn btn--primary" id="notice-confirm">확인</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

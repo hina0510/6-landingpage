@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #C7D9A5;
+  --color-secondary: #EEF4E5;
+  --color-accent: #8DBB6C;
+  --color-accent-dark: #6B8F52;
+  --color-container-border: #8DBB6C;
+  --color-scenario-bg: #C7D9A5;
+  --color-mid-scenario-bg: #D4E2BB;
+  --color-bg: #F7F9F2;
+  --color-bg-warm: #F2F5ED;
+  --color-text: #1A1A1A;
+  --color-text-muted: #5C5C5C;
+  --color-white: #FFFFFF;
+  --color-modal: #DDE7D4;
+
+  --glass-bg: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --glass-blur: 20px;
+
+  --font-main: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-num: 'Pretendard', sans-serif;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 8px 32px rgba(26, 26, 26, 0.06);
+  --shadow-card: 0 12px 40px rgba(107, 143, 82, 0.12);
+  --shadow-btn: 0 4px 20px rgba(107, 143, 82, 0.25);
+
+  --container-max: 1200px;
+  --header-h: 72px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-med: 0.4s var(--ease-out);
+}

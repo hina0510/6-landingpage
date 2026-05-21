@@ -1,0 +1,226 @@
+/* Card image (card.png) */
+.card-visual {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 20px 48px rgba(26, 26, 26, 0.18));
+}
+
+.card-visual--hero {
+  transform: rotateZ(11deg) rotateY(-6deg);
+  transform-style: preserve-3d;
+  will-change: transform;
+  animation: hero-card-float 6s ease-in-out infinite alternate;
+}
+
+.card-visual--showcase {
+  transform: rotate(-4deg);
+}
+
+.card-visual__img {
+  display: block;
+  width: min(360px, 88vw);
+  height: auto;
+  border-radius: 16px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.card-visual--hero .card-visual__img {
+  width: min(300px, 68.5vw);
+}
+
+.card-visual--showcase .card-visual__img {
+  width: min(300px, 75vw);
+}
+
+/* Form */
+.apply-form {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 36px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-container-border);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px;
+  min-height: 52px;
+  border: 1.5px solid var(--color-container-border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.5);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), padding var(--transition-fast);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(141, 187, 108, 0.2);
+}
+
+.form-group input:focus,
+.form-group input:not(:placeholder-shown) {
+  padding: 22px 16px 10px;
+}
+
+.form-group label {
+  position: absolute;
+  left: 16px;
+  top: 31px;
+  transform: translateY(-50%);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  pointer-events: none;
+  transition: top var(--transition-fast), font-size var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: 19px;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  transform: translateY(-50%);
+}
+
+.form-error {
+  display: block;
+  font-size: 0.75rem;
+  color: #c44;
+  margin-top: 4px;
+  min-height: 1em;
+}
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.form-check input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--color-accent);
+}
+
+.form-check label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.apply-form .btn--wide {
+  max-width: none;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay[hidden] {
+  display: none;
+}
+
+.modal-overlay.is-open[hidden] {
+  display: flex;
+}
+
+.modal {
+  background: var(--color-modal);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  transform: scale(0.96) translateY(20px);
+  opacity: 0;
+  transition: transform 0.6s var(--ease-out), opacity 0.6s var(--ease-out);
+}
+
+.modal-overlay.is-open .modal {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.modal--notice {
+  max-width: 520px;
+  text-align: left;
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-text-muted);
+  border-radius: 50%;
+  transition: background var(--transition-fast);
+}
+
+.modal__close:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.modal__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.modal__desc {
+  color: var(--color-text-muted);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.modal__list {
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+
+.modal__list li {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  padding: 8px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.modal__list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
