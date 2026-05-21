@@ -180,15 +180,6 @@
     background-position: 65% center;
   }
 
-  .hero__bg::after {
-    background: linear-gradient(
-      180deg,
-      rgba(57, 87, 38, 0.35) 0%,
-      rgba(57, 87, 38, 0.12) 45%,
-      transparent 70%
-    );
-  }
-
   .card-visual--hero .card-visual__img {
     width: min(196px, 59.5vw);
   }
