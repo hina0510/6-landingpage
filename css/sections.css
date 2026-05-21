@@ -413,6 +413,10 @@
   background: var(--color-scenario-bg);
 }
 
+#scenario-title {
+  margin-bottom: 50px;
+}
+
 .scenario__flow {
   display: flex;
   align-items: flex-start;
