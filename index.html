@@ -235,7 +235,28 @@
       <div class="container">
         <h2 class="section-title reveal" id="apply-title">카드 발급 신청</h2>
         <p class="section-desc reveal">간단한 정보 입력으로 혜택과 이벤트에 함께 참여하세요</p>
-        <form class="apply-form glass-panel reveal" id="apply-form" novalidate>
+        <div class="apply__stage">
+          <div class="apply__decor" aria-hidden="true">
+            <img
+              class="apply__bg apply__bg--card"
+              src="assets/images/card3.png"
+              alt=""
+              width="560"
+              height="354"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="apply__bg apply__bg--phone"
+              src="assets/images/phone.png"
+              alt=""
+              width="280"
+              height="560"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <form class="apply-form glass-panel reveal" id="apply-form" novalidate>
           <div class="form-group">
             <input type="text" id="name" name="name" required autocomplete="name" placeholder=" " />
             <label for="name">이름</label>
@@ -262,7 +283,8 @@
           </div>
           <span class="form-error" id="error-privacy"></span>
           <button type="submit" class="btn btn--primary btn--wide">카드 발급하고 혜택 받기</button>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
 

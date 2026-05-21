@@ -134,6 +134,30 @@
     text-align: center;
   }
 
+  .apply > .container {
+    margin-left: 0;
+    margin-right: 32px;
+  }
+
+  .apply__stage {
+    min-height: 420px;
+  }
+
+  .apply__bg--card {
+    left: -50px;
+    bottom: -80px;
+    width: min(320px, 58%);
+    max-height: 260px;
+    transform: rotate(14deg) scale(1.3);
+  }
+
+  .apply__bg--phone {
+    bottom: -100px;
+    width: min(180px, 34%);
+    max-height: 300px;
+    transform: scale(1.3);
+  }
+
   .showcase__controls {
     justify-content: center;
   }
@@ -190,6 +214,39 @@
 
   .card-visual--showcase .card-visual__img {
     width: min(240px, 70vw);
+  }
+
+  .apply.section {
+    padding: 0;
+  }
+
+  .apply > .container {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .apply .section-title {
+    margin-top: 32px;
+  }
+
+  .apply__stage {
+    min-height: 380px;
+  }
+
+  .apply__bg--card {
+    left: -50px;
+    bottom: -72px;
+    width: min(260px, 72%);
+    max-height: 200px;
+    opacity: 0.9;
+    transform: rotate(12deg) scale(1.3);
+  }
+
+  .apply__bg--phone {
+    bottom: -100px;
+    width: min(140px, 38%);
+    max-height: 220px;
+    transform: scale(1.3);
   }
 
   .event__prizes {
